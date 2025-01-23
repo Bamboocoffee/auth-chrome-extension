@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "Authorization",
+          "operation": "set",
+          "value": "TOKEN"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "*://localhost:5000/*", 
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "Authorization",
+          "operation": "set",
+          "value": "d9f1e25ac8b3499db1b7f3f4f89a1b627ef9358c456f48e1f6b2b8a6d1f4c9d2"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "*://127.0.0.1:5000/*", 
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  }
+]
